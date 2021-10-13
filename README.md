@@ -1,7 +1,7 @@
 # csci585DB
 ALL the home works for csci 585 @2021 Fall taight by Saty.
 
-&copy; XUAN ZHAN
+&copy; XUAN ZHANG
 
 The course web is below
 https://bytes.usc.edu/cs585/f21_d--a--ta/lectures/index.html.
