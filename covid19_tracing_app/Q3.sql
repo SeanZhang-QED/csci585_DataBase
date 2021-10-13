@@ -19,3 +19,4 @@ HAVING COUNT(e1.EMP_Floor_Num) = (
 		WHERE e2.EMP_ID = c2.EMP_ID
 		GROUP BY e2.EMP_Floor_Num) d
 );
+

@@ -1,8 +1,8 @@
 # Q5, the Navicat for MySQL database is used for the questions.
 
--- Assuming there are only 3 status for the sick employees that they would like to report, ie. sick, hospitalized, well. 
--- I'd like to know the number of employees who have reported ALL of the stutes.
--- ie. I'm going to computing table division between HEALTHSTATUS and sd(status_description). 
+-- Assuming there is only three status for the sick employees that they would like to report, i.e., sick, hospitalized, well. 
+-- I'd like to know the number of employees who have reported ALL of the statuses.
+-- ie. I'm going to compute the table division between HEALTHSTATUS and sd(status_description). 
 
 SELECT COUNT(DISTINCT h1.EMP_ID ) AS Num_of_Emp
 FROM healthstatus as h1

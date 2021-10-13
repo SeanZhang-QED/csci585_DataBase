@@ -22,7 +22,7 @@ CREATE TABLE EMPLOYEE (
 CREATE TABLE MEETING (
 	Meeting_ID			INT(10)		NOT NULL,
 	EMP_ID					INT(10)   NOT NULL,
-	Room_Num				INT(4)		NOT NULL,
+	Room_Num				INT(1)		NOT NULL,
 	Floor_Num				INT(2)		NOT NULL,
 	Start_Time			INT(2)		NOT NULL,
 	PRIMARY KEY (Meeting_ID, EMP_ID),
@@ -132,6 +132,8 @@ INSERT INTO symptom (EMP_ID, Date_Reported, Symptom_ID) VALUES
 (5,'2021-10-3', 2),
 (5,'2021-10-3', 5),
 (6,'2021-10-3', 1);
+
+-- INSERT INTO symptom (EMP_ID, Date_Reported, Symptom_ID) VALUES (11,'2021-10-11', 2); -- test for 2 symptom tie the first place.
 -- SELECT * FROM symptom;
 
 #---------------------End for Q2-------------------------#
@@ -179,7 +181,7 @@ INSERT INTO test (EMP_ID, Test_Date, Test_Time, Location, Test_result) VALUES
 -- SELECT * FROM test;
 #---------------------End for Q4-------------------------#
 
-#-------------Then, insert the data for Q4---------------#
+#-------------Then, insert the data for Q5---------------#
 INSERT INTO HEALTHSTATUS (EMP_ID, Date, `Status`) VALUES
 (26, '2021-10-01','sick'),
 (26, '2021-10-02','sick'),
@@ -199,4 +201,30 @@ INSERT INTO HEALTHSTATUS (EMP_ID, Date, `Status`) VALUES
 (20, '2021-10-10', 'sick'),
 (20, '2021-10-11', 'well');
 
-#---------------------End for Q4-------------------------#
+#---------------------End for Q5-------------------------#
+
+#--------Finally, populate all the other tables----------#
+INSERT INTO MEETING (Meeting_ID, EMP_ID, Room_Num, Floor_Num, Start_Time) VALUES
+(1, 1, 9, 3, 8),
+(1, 11, 9, 3, 8),
+(1, 21, 9, 3, 8),
+(2, 6, 7, 2, 9),
+(2, 12, 7, 2, 9),
+(2, 18, 7, 2, 8),
+(2, 24, 7, 2, 9),
+(3, 1, 1, 1, 12),
+(3, 5, 1, 1, 12),
+(3, 15, 1, 1, 12),
+(3, 20, 1, 1, 12),
+(3, 25, 1, 1, 12),
+(4, 1, 1, 9, 14),
+(4, 26, 1, 9, 14),
+(5, 13, 9, 9, 14),
+(5, 14, 9, 9, 14);
+
+INSERT INTO NOTIFICATION (EMP_ID, Notification_Date, Notification_type) VALUES
+(2,'2020-10-01','mandatory'),
+(3,'2020-10-01','mandatory'),
+(5,'2020-10-02','optional'),
+(7,'2020-10-03','optional'),
+(11,'2020-10-04','mandatory');
