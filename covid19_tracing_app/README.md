@@ -28,3 +28,39 @@ Consider the following 'barebones' design (showing just entity names and connect
 **Q4 (1 point)**. The management would like stats, for a given period (between start, end dates), on the following: number of scans, number of tests, number of employees who self-reported symptoms, number of positive cases. Write queries to output these.
 
 **Q5 (1 point)**. Create your own query! What else would you like to learn, from the data? Describe/list the question, and come up with the query to answer it. You'll get 1 extra point if your query involves table division [be sure to indicate this in your README].
+
+## All the queries are written on Navicat for the **MySQL** database.
+
+## Assumptions on each Entity:
+* Employee:
+  - I'd like to restore the employee's full name(VARCHAR(100)) instead of splitting it into first and last names.
+  - The office room number(INT(4)) like 0505 is the fifth office room on the fifth floor.
+  - The email address field is optional.	
+* Meeting:
+	- The room number(INT(1)) in this entity stands for the number of meeting room. 
+	- There are nine meeting rooms on each floor, numbered 1 through 9.
+* Symptom:
+	- Symptom_ID(1 through 5) each stands for a distinct type of symptom.
+* Scan: 
+	- The temperature(INT(3)) is on the Fahrenheit scale.
+	- The one who has been scanned over 99 degrees would be asked to take the test.
+
+## The explanations for queries:
+* Q1: 
+	- I first create the table for each entity and then populate them with a small bunch of records.
+* Q2: 
+	- The most self-reported symptom is selected from the table Symptom. 
+	- If two or more signs(symptoms) tie the first place, I will choose **all of them** to display.
+* Q3:
+	- The tracing system would record all of the positive sick employees in the Case table.
+	- Assume that if an employee has recovered from covid 19, they will not be infected anymore. Ie. There will be only zero or one record for a specific employee in the Case table.
+	- The sickest floor can be defined as the floor with the most infected employees, who will have the floor number in its record on the employee table.
+	- If two or more floors tie the first place, I will choose **all of them** to display.
+* Q4:
+	- The given period is from 2021-10-1 to 2021-10-15 
+	- The number of positive cases is retrieved from the table Case.
+* Q5: 
+	- Assuming there is only three status for the sick employees that they would like to report, i.e., sick, hospitalized, well. 
+	- I'd like to know the number of employees who have reported **ALL of the statuses**.
+	- Ie. I will compute the table division(for bonus points) between the HEALTH-STATUS table and sd(stands for status_description, and derived from the HEALTH-STATUS table).
+ 
