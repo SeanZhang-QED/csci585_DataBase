@@ -1,4 +1,4 @@
-# csci585DB
+# csci585 DataBase Systems
 ALL the home works for csci 585 @2021 Fall taight by Saty.
 
 &copy; XUAN ZHANG
