@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+  <Document>
+    <Style id="z1">
+      <IconStyle>
+        <Icon>
+          <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Trojan Terrace</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28829091799844,34.031724423726054</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lyon Center</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28778404338267,34.024323246935726</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>THH</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28407810482246,34.02241134847554</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CPA</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28462335410216,34.021116253974334</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Leavey</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28303973804223,34.02158118680993</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lewis Hall</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28350377090044,34.019481869285986</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AHF</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28475056580333,34.02004669773055</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tommy Trojan</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.2853975254542,34.02056051231266</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bookstore</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.2863639554364,34.02088968919598</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Trojan Sword</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.28846603241012,34.02280742708744</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OHE</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.2897097387086,34.02089221325203</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GER</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.29034387468731,34.020195275928286</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fisher Museum</name>
+      <styleUrl>#z1</styleUrl>
+      <Point>
+        <coordinates>-118.2876472412777,34.018513903155946</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name> Convex Hall Polygan </name>
+      <Style>
+        <PolyStyle>
+          <color>#a00000ff</color>
+          <outline>0</outline>
+        </PolyStyle>
+      </Style>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates> -118.2876472412777,34.01851390315595
+              -118.29034387468731,34.02019527592829
+              -118.28829091799844,34.031724423726054
+              -118.28303973804223,34.02158118680993
+              -118.28350377090044,34.01948186928598
+              -118.2876472412777,34.01851390315595
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.28829091799844,34.031724423726054  -118.28778404338267,34.024323246935726</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.28829091799844,34.031724423726054  -118.28846603241012,34.02280742708744</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.28829091799844,34.031724423726054  -118.28407810482246,34.02241134847554</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.28829091799844,34.031724423726054  -118.2897097387086,34.02089221325203</coordinates>
+      </LineString>
+    </Placemark>
+
+  </Document>
+</kml>
