@@ -1,4 +1,4 @@
-# csci585 DataBase Systems
+# CSCI585 DataBase Systems @ USC - Univ of Southern California 
 ALL the home works for csci 585 @2021 Fall taight by Saty.
 
 &copy; XUAN ZHANG
